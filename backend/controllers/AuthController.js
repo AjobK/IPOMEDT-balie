@@ -53,7 +53,7 @@ exports.login = (req, res, next) => {
         loadedUser = user.rows[0];
 
         if (!loadedUser)
-            return res.status(401).json({ message: 'Invalid login.' });
+            throw new Error('Invalid login')
 
         return bcrypt.compare(password, loadedUser.password);
     })
