@@ -15,7 +15,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: [FRONTEND_URL, 'http://kustra.nl', 'https://kustra.nl', 'http://localhost:4200'],
+    origin: [FRONTEND_URL, 'http://jujafor.life', 'https://jujafor.life', 'http://localhost:4200'],
     credentials: true
 }));
 
