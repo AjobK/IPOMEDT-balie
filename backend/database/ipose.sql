@@ -5,7 +5,7 @@ CREATE TABLE student (
 
 CREATE TABLE reviewer (
     id SERIAL PRIMARY KEY,
-    username text NOT NULL,
+    username text NOT NULL UNIQUE,
     password text NOT NULL
 );
 
